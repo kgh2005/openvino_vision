@@ -1,0 +1,25 @@
+description: Ultralytics YOLO11n model trained on C:\Users\msi\ultralytics\ultralytics\robocup25.v1i.yolov11\data.yaml
+author: Ultralytics
+date: '2025-06-05T15:52:19.008474'
+version: 8.3.150
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: '0'
+  1: '1'
+  2: '2'
+  3: '3'
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  dynamic: false
+  nms: false
+channels: 3
