@@ -9,19 +9,7 @@ YOLO 모델을 OpenVINO IR 형식으로 변환하여, 실시간 카메라 스트
 
 - YOLOv8n / YOLOv11n 모델을 OpenVINO로 변환하여 실시간 추론 수행
 - ROS2 Humble 기반에서 OpenCV를 활용한 바운딩 박스 시각화
-- 결과 영상 자동 저장 (`result_video/` 폴더)
 - Python 테스트 코드 포함 (ROS2 외부 환경에서도 실행 가능)
-
----
-
-## 🧪 Test Summary
-
-| 항목 | YOLOv8n | YOLOv11n |
-|------|---------|----------|
-| **평균 추론 속도** | 11ms | 13ms |
-| **주관적 탐지 정확도** | 더 뛰어남 | 보통 |
-| **IR 모델 구조** | NMS 포함 | NMS 포함 |
-| **결과 영상 저장** | O (`result_video/`) | O |
 
 ---
 
