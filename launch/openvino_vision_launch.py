@@ -7,7 +7,7 @@ def generate_launch_description():
     model_path = os.path.join(
         get_package_share_directory('openvino_vision'),
         'model',
-        'best.xml'
+        'yolo11n.xml'
     )
 
     return LaunchDescription([

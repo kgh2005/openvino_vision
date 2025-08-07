@@ -13,13 +13,6 @@
 #include <chrono>
 #include <cmath>
 
-
-struct DetectionResult {
-    cv::Rect bbox;
-    float confidence;
-    int class_id;
-};
-
 class OpenVINOVisionNode : public rclcpp::Node
 {
 public:
@@ -27,7 +20,9 @@ public:
 
 private:
   void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg);
+  void imageProcessing();
 
+  cv::Mat bgr_image;
 
   // OpenVINO 엔진
   ov::Core core_; // OpenVINO 런타임 코어
