@@ -18,7 +18,7 @@ YOLO 모델을 OpenVINO IR 형식으로 변환하여, 실시간 카메라 스트
 - **OS**: Ubuntu 22.04  
 - **Framework**: ROS 2 Humble  
 - **OpenVINO Version**: 2025.1  
-- **Camera**: `/camera/camera/color/image_raw`  
+- **Camera**: `/camera/image_raw`  
 - **Model Input Format**: `[1, N, 6]` (NMS=True export)
 
 ---
