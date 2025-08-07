@@ -51,10 +51,10 @@ yolo export \
 
 ## 📸 실행 방법 (ROS2 기반)
 
-### 1. 카메라 노드 실행 (예: realsense2_camera 등)
+### 1. 카메라 노드 실행
 
 ```bash
-ros2 launch realsense2_camera rs_launch.py
+ros2 launch ocam_ros2 ocam_ros.launch.py 
 ```
 
 ### 2. OpenVINO Vision 노드 실행
@@ -70,7 +70,6 @@ ros2 launch openvino_vision openvino_vision_launch.py
 - `python_test_code/` 디렉토리 내에 포함
 - ROS2 환경 없이 IR 모델 성능을 테스트할 수 있음
 - OpenCV 기반으로 추론 결과 시각화 가능
-- nms 안되는 버전
 
 ---
 
