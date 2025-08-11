@@ -5,7 +5,8 @@
 OpenVINOVisionNode::OpenVINOVisionNode()
     : Node("openvino_vision_node")
 {
-  declare_parameter<std::string>("model_xml", "model/best.xml");
+  // declare_parameter<std::string>("model_xml", "model/best.xml");
+  declare_parameter<std::string>("model_xml");
   std::string model_path;
   get_parameter("model_xml", model_path);
 
